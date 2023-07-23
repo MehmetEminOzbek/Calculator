@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+
+<div class="calculator">
+    <input type="text" id="calculator-input" class="inputbox" value="0" disabled>
+
+
+    <div class="calculator-keys">
+        
+        <button type="button" class="operator" value="+" onclick="addToDisplay('+')">+</button>
+        <button type="button" class="operator" value="-" onclick="addToDisplay('-')">-</button>
+        <button type="button" class="operator" value="*" onclick="addToDisplay('*')">&times;</button>
+        <button type="button" class="operator" value="/" onclick="addToDisplay('/')">&divide;</button>
+
+
+        <button type="button" value="7" onclick="addToDisplay('7')">7</button>
+        <button type="button" value="8" onclick="addToDisplay('8')">8</button>
+        <button type="button" value="9" onclick="addToDisplay('9')">9</button>
+        <button type="button" id="backspace" class="operator" value="/" onclick="deleteChar()"><ion-icon name="backspace-outline"></ion-icon></button>
+
+
+        <button type="button" value="4" onclick="addToDisplay('4')">4</button>
+        <button type="button" value="5" onclick="addToDisplay('5')">5</button>
+        <button type="button" value="6" onclick="addToDisplay('6')">6</button>
+
+
+        <button type="button" value="3" onclick="addToDisplay('3')">3</button>
+        <button type="button" value="2" onclick="addToDisplay('2')">2</button>
+        <button type="button" value="1" onclick="addToDisplay('1')">1</button>
+
+        <button type="button" class="decimal" value="." onclick="addToDisplay('.')">.</button>
+        <button type="button" value="0" onclick="addToDisplay('0')">0</button>
+        <button type="button"  class="clear" value="clear" onclick="clearDisplay()">AC</button>
+
+
+        <button type="button"  class="equal-sign operator" value="=" onclick="calculate()">=</button>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </div>
+</div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
